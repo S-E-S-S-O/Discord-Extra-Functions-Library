@@ -10,9 +10,9 @@ class Guild():
   def create_channels(Number, *ChannelName):
     for CreateChannels in range(Number):
       await CreateChannels.guild.create_text_channel(ChannelName)
-      if Number = None:
+      if Number == None:
         raise Exception(f"[{Fore.RED] ERROR{Fore.WHITE}] Nothing has been put in the {Fore.YELLOW}Number {Fore.WHITE}input.") 
-      elif ChannelName = None
+      elif ChannelName == None
         raise Exception(f"[{Fore.RED] ERROR{Fore.WHITE}] Nothing has been put in the {Fore.YELLOW}ChannelName {Fore.WHITE}input.") 
 
 class Call():
