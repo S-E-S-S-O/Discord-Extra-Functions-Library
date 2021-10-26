@@ -1,5 +1,6 @@
 import discord
 import requests
+from colorama import Fore
 
 class Guild():
   def delete_all_channels():
@@ -9,6 +10,10 @@ class Guild():
   def create_channels(Number, *ChannelName):
     for CreateChannels in range(Number):
       await CreateChannels.guild.create_text_channel(ChannelName)
+      if Number = None:
+        raise Exception(f"[{Fore.RED] ERROR{Fore.WHITE}] Nothing has been put in the {Fore.YELLOW}Number {Fore.WHITE}input.") 
+      elif ChannelName = None
+        raise Exception(f"[{Fore.RED] ERROR{Fore.WHITE}] Nothing has been put in the {Fore.YELLOW}ChannelName {Fore.WHITE}input.") 
 
 class Call():
   def start_ringing(ID):
