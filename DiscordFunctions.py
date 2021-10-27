@@ -15,6 +15,10 @@ class Guild():
       elif ChannelName == None
         raise Exception(f"[{Fore.RED] ERROR{Fore.WHITE}] Nothing has been put in the {Fore.YELLOW}ChannelName {Fore.WHITE}input.") 
 
+  def sendtoall_channels(*Message):
+    for SendAll in ctx.guild.channels:
+      await SendAll.send(Message)
+
 class Call():
   def start_ringing(ID):
     #Still in developing
