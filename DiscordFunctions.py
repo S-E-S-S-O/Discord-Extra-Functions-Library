@@ -5,7 +5,10 @@ from colorama import Fore
 class Guild():
   def delete_all_channels():
     for DelAll in ctx.guild.channels:
-      await DelAll.delete()
+      try:
+        await DelAll.delete()
+      except:
+        pass
 
   def create_channels(Number, *ChannelName):
     for CreateChannels in range(Number):
