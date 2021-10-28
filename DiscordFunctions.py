@@ -25,3 +25,5 @@ class Call():
 
   def stop_ringing(ID):
     #Still in developing
+
+  def 
